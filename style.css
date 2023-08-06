@@ -2,24 +2,157 @@ html,
 body,
 :root {
     height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: #101010;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+    color: aliceblue;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    height: 20%;
+    width: fill-available;
+    background-color: #101010;
+    color: aliceblue;
+    font-size: 32px;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+.grid-header {
+    height: 60%;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 40px;
+    margin-top: 40px;
+}
+
+.links a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 32px;
+    padding: 20px 40px;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.links .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .ig-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    /* padding: 0 40px; */
+    width: 100%;
+}
+
+.ig-grid img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main h1,
+h2 {
+    margin: 20px 0;
+    padding: 0 40px;
+}
+
+.bike-imgs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    padding: 0 40px;
+}
+
+.bike-imgs img {
+    min-width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.card-slider {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    scrollbar-width: none;
+    padding: 0 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 700px;
+    height: 400px;
+    background-color: #ffffff10;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
